@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <script src="frontend.js"></script>
+  </head>
+  <body>
+    <div id="menu" style="display: none">
+      <h1>Connect</h1>
+      <div class="box">
+        <span id="playercount">? players online</span>
+        <button>Classic</button>
+        <button>Custom</button>
+      </div>
+    </div>
+    <div id="newmenu">
+      <h1>Connect</h1>
+      <div class="box">
+	    Mode: <input type="radio" id="classic" name="mode" checked> <label for="classic">Classic</label> <input type="radio" id="custom" name="mode"> <label for="custom">Custom</label>
+		<br>
+        <span id="playercount">? players online</span>
+        <button>Classic</button>
+        <button>Custom</button>
+      </div>
+    </div>
+    <div id="game" style="display: none">
+      <div id="board" class="box"></div>
+      <div id="chat" class="box"><span id="username" onclick="document.getElementById('message').value = '/nick '+this.innerText;document.getElementById('message').focus()">user1234</span><input type="text" autocomplete="off" id="message"></input><p id="chatlog"></div> <!-- TODO: two columns layout with flexbox to better use the screen real estate, have it be below the board only on mobile screens -->
+    </div>
+  </body>
+</html>

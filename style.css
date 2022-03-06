@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  height: 100vh;
+}
+
+body, button {
+  color: #ffe28a;
+}
+
+div.box {
+  border: 2px solid #ffe28a;
+  padding: 2em;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  font: inherit;
+  display: block;
+  margin-top: 1em;
+  background-color: #2a2a2a;
+  border: 2px solid #ffe28a;
+  cursor: pointer;
+}
+
+#game {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+#board {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0;
+  padding-top: 2em;
+  user-select: none;
+}
+
+#board span {
+  padding: 2em;
+  cursor: pointer;
+  border-left: 2px solid #ffe28a;
+  color: #ffe28a99;
+}
+
+#chat {
+  width: 28.375em;
+  height: 28em;
+  margin: 2em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  word-break: break-all;
+  overflow: hidden;
+  position: relative;
+}
+
+#chat::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 4em;
+  background: linear-gradient(to bottom, transparent, #2a2a2a 50%);
+  /*
+  height: 1.6em;
+  background: #2a2a2a;
+  */
+}
+
+#username {
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+#message {
+  width: 100%;
+  background-color: #2a2a2a;
+  border: 2px solid #ffe28a;
+  color: #ffe28a99;
+}
+
+#chatlog {
+  margin-bottom: 0;
+}
+
+#newmenu {
+  text-align: center;
+}
+
+#newmenu .box {
+  display: block;
+}
+
+select {
+  background-color: #2a2a2a;
+  border: 2px solid #ffe28a;
+  color: #ffe28a99;
+}
+
+input[type="radio"] {
+  display: inline;
+}
